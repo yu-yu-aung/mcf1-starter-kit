@@ -37,14 +37,14 @@ const testimonials = [
 
 const Testimonial = () => {
     return (
-        <div className="space-y-10 mb-30">
+        <div className="space-y-10 mb-40 py-20 bg-muted-foreground/5 relative w-screen left-1/2 -translate-x-1/2">
             <h4 className="mb-2 uppercase tracking-widest text-center text-primary font-semibold text-sm">Testimonial Highlight</h4>
             <h1 className="text-4xl md:text-5xl text-center font-[petrovFont]">
                 What our customers are saying
             </h1>
-            <div className="relative max-w-4xl mx-auto px-16">
+            <div className="relative max-w-4xl mx-auto md:px-16">
                 <Quote className="mx-auto " />
-                <Carousel className="w-2/3 mx-auto pt-8">
+                <Carousel className="w-3/5  mx-auto pt-8">
                     <CarouselContent>
                         {testimonials.map((item, index) => (
                             <CarouselItem key={index}>

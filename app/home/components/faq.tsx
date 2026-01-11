@@ -37,12 +37,12 @@ const faqData = [
 const Faq = () => {
 
     return (
-        <div className='space-y-10 mb-30'>
+        <div className='space-y-10 mb-40'>
             <h4 className="mb-2 uppercase tracking-widest text-center text-primary font-semibold text-sm">Faq</h4>
             <h1 className="text-4xl md:text-5xl text-center font-[petrovFont]">
                 Frequently asked questions
             </h1>
-            <Accordion type="single" collapsible className="w-full">
+            <Accordion className="w-full">
                 
                 {faqData.map((faq) => (
                     <AccordionItem key={faq.id} value={faq.id} className="border-b border-slate-200 py-2">
