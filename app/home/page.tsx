@@ -1,4 +1,5 @@
 
+import Faq from "./components/faq";
 import Features from "./components/features";
 import GetStarted from "./components/getstarted";
 import HeroSection from "./components/herosection";
@@ -11,6 +12,7 @@ const Page = () => {
       <HeroSection />
       <Testimonial />
       <Features />
+      <Faq />
       <GetStarted />
     </section>
   )

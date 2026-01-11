@@ -9,6 +9,7 @@ const GetStarted = () => {
             <h1 className="text-4xl md:text-5xl text-center font-[petrovFont]">
                 Start your free trial today.
             </h1>
+            <h4 className="text-base text-center text-muted-foreground w-3/5">The all-in-one Experience the future of retail with our all-in-one platform. Join thousands of merchants and see how simple managing your business can be.</h4>
             <Button className="text-base px-4 py-6">
                 <Blocks />
                 Start trial for free
