@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import localFont from 'next/font/local'
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "../style/globals.css";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,6 +14,11 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const petrovFont = localFont({
+  src: './fonts/PetrovSans-Regular.ttf',
+  variable: '--font-petrov', // This creates a CSS variable
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${petrovFont.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
