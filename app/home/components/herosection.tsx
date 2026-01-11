@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
     return (
-        <div className='h-screen grid grid-cols-2 justify-center items-center my-20'>
+        <div className='h-screen grid grid-cols-2 justify-center items-center mb-0'>
             <div className="col-span-1 justify-center w-full space-y-10">
                 <div className="text-5xl font-[petrovFont] space-y-2">
                     <h1>Bring your brand</h1>
