@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import localFont from 'next/font/local'
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "../style/globals.css";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -17,7 +20,7 @@ const geistMono = Geist_Mono({
 
 const petrovFont = localFont({
   src: './fonts/PetrovSans-Regular.ttf',
-  variable: '--font-petrov', // This creates a CSS variable
+  variable: '--font-petrov',
 })
 
 export const metadata: Metadata = {
@@ -31,11 +34,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={inter.variable} suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${petrovFont.variable} ${geistMono.variable} antialiased`}
       >
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+        <Header />
         {children}
+        <Footer/>
+</ThemeProvider>
       </body>
     </html>
   );
