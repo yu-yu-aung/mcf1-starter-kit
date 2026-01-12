@@ -14,7 +14,7 @@ const statsData = [
 
 const Data = () => {
     return (
-        <div className='space-y-20 mb-40 '>
+        <div className='space-y-20 pb-40 text-foreground bg-background'>
             <div className='space-y-4'>
                 <div className="text-4xl md:text-5xl font-[petrovFont] space-y-2">
                     <h1>The global platform</h1>

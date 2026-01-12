@@ -37,7 +37,7 @@ const faqData = [
 const Faq = () => {
 
     return (
-        <div className='space-y-10 mb-40'>
+        <div className='space-y-10 pb-40 bg-background text-foreground'>
             <h4 className="mb-2 uppercase tracking-widest text-center text-primary font-semibold text-sm">Faq</h4>
             <h1 className="text-4xl md:text-5xl text-center font-[petrovFont]">
                 Frequently asked questions
