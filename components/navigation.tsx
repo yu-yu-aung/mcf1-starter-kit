@@ -16,7 +16,7 @@ export function Navigation() {
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
             <Link
-              href="/home"
+              href="/"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               Home

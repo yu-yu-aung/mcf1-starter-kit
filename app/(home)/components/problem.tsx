@@ -22,7 +22,7 @@ const problems = [
 
 const Problem = () => {
     return (
-        <div className=' mb-40 py-20 bg-muted-foreground/5 relative w-screen left-1/2 -translate-x-1/2 '>
+        <div className=' pb-40 py-20 bg-muted-foreground/5 transition-colors text-foreground dark:bg-muted relative w-screen left-1/2 -translate-x-1/2 '>
             <div className='mx-auto w-[90%] space-y-20'>
                 {/* <h4 className="mb-2 uppercase tracking-widest text-center text-primary font-semibold text-sm">Problem</h4> */}
                 <h1 className="text-4xl md:text-5xl font-[petrovFont]">

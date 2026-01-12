@@ -36,7 +36,7 @@ const solutionData = [
 
 const Solution = () => {
     return (
-        <div className='space-y-20 mb-40'>
+        <div className='space-y-20 pb-40 pt-20 bg-background text-foreground'>
             <div className="space-y-4">
                 <h4 className="mb-2 uppercase tracking-widest text-primary font-semibold text-sm">Our Solutions</h4>
                 <h1 className="text-4xl md:text-5xl font-[petrovFont]">
@@ -47,15 +47,15 @@ const Solution = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {solutionData.map((item, index) => (
-                    <Card key={index} className="relative w-full overflow-hidden pt-0 group border-gray-200">
+                    <Card key={index} className="relative w-full overflow-hidden pt-0 group border-gray-200 bg-background!">
 
-                        <div className="bg-primary absolute inset-0 z-30 aspect-video opacity-0 transition-opacity mix-blend-color" />
+                        <div className="bg-primary absolute inset-0 z-10 aspect-video opacity-0 transition-opacity mix-blend-color" />
 
                         <div className="overflow-hidden aspect-video">
                             <img
                                 src={item.image}
                                 alt={item.title}
-                                className="relative z-20 w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                                className="relative z-5 w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                             />
                         </div>
 

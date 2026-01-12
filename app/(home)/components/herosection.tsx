@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
     return (
-        <div className='h-screen grid  md:grid-cols-2 justify-center items-center  mb-20'>
+        <div className='h-screen grid bg-background text-foreground transition-colors md:grid-cols-2 justify-center items-center  pb-20'>
             <div className="col-span-1 justify-center w-full space-y-10">
                 <div className="text-4xl md:text-5xl font-[petrovFont] space-y-2">
                     <h1>Bring your brand</h1>
@@ -20,7 +20,7 @@ const HeroSection = () => {
                 </div>
             </div>
             <div className="col-span-1 justify-center items-center w-full space-y-10">
-                <Image src={heroImg} alt="hero" width={500} className="mx-auto object-cover border border-gray-200 rounded-xl shadow-2xs" />
+                <Image src={heroImg} alt="hero" width={500} className="mx-auto object-cover  border border-gray-200 rounded-xl shadow-2xs" />
             </div>
         </div>
     )

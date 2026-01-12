@@ -37,7 +37,7 @@ const testimonials = [
 
 const Testimonial = () => {
     return (
-        <div className="space-y-10 mb-40 py-20 bg-muted-foreground/5 relative w-screen left-1/2 -translate-x-1/2">
+        <div className="space-y-10 dark:bg-background text-foreground pb-40 py-20 bg-muted-foreground/5 relative w-screen left-1/2 -translate-x-1/2">
             <h4 className="mb-2 uppercase tracking-widest text-center text-primary font-semibold text-sm">Testimonial Highlight</h4>
             <h1 className="text-4xl md:text-5xl text-center font-[petrovFont]">
                 What our customers are saying
