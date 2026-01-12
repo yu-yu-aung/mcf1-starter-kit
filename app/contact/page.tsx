@@ -1,20 +1,19 @@
 import ContactForm from "@/components/contact-form";
-import { Navigation } from "@/components/navigation";
 import { ContactInfoCard } from "@/components/contact-info-card";
 import { Badge } from "@/components/ui/badge";
 
 const Page = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
+    
 
       {/* Hero Section */}
       <section className="border-b bg-muted/30">
         <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="mx-auto max-w-3xl text-center space-y-4">
-            <Badge variant="secondary" className="mb-2">
-              Contact
-            </Badge>
+            
+            
+            
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
               Get in touch with us
             </h1>
