@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import heroImg from "../../public/images/hero.png";
+import heroImg from "../../../public/assets/hero.png";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
