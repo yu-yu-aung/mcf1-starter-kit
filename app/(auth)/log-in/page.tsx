@@ -26,7 +26,7 @@ const Page = () => {
       </div>
 
       <div className="flex items-center justify-center bg-gray-50 px-6">
-        <div className="w-full max-w-md bg-white rounded-2xl shadow-xl p-8">
+        <div className="w-full max-w-md bg-white shadow-xl p-8">
           
           <h2 className="text-2xl font-semibold text-gray-900">
             Welcome back!
